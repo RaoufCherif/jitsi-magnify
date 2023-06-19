@@ -22,13 +22,13 @@ export default ${componentName};
 
 export const storiesTemplate = (
   componentName: string,
-  componentDirectories: string[]
+  componentDirectories: string[],
 ) => `import React from 'react';
 import ${componentName} from './${componentName}';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 export default {
-  title: '${componentDirectories.join("/")}',
+  title: '${componentDirectories.join('/')}',
   component: ${componentName},
 } as ComponentMeta<typeof ${componentName}>;
 
@@ -62,4 +62,4 @@ export const defaultAsTemplate = (componentName: string) =>
   `export { default as ${componentName} } from './${componentName}';\n`;
 
 export const exportAllTemplate = (subFolderName: string) =>
-  `export * from './${subFolderName}';\n`;
+ `export * from './${subFolderName}';\n`;
