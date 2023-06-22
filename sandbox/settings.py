@@ -301,6 +301,7 @@ class Base(MagnifyCoreConfigurationMixin, Configuration):
         "django.contrib.staticfiles",
         "django.contrib.messages",
         "django.contrib.humanize",
+         "timezone_field",
     )
 
     # Languages
